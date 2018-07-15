@@ -38,9 +38,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: cd example
-      - run: npm install
-      - run: npm run deploy
+      - run: cd example && npm install
+      - run: cd example && npm run deploy
 
 workflows:
   version: 2
