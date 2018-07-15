@@ -1,0 +1,23 @@
+@import 'src/variables.scss';
+
+$rotation: 135deg;
+
+.check.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  border-bottom: solid 1px currentColor;
+  -webkit-transform: rotate($rotation);
+  transform: rotate($rotation);
+}
+
+.check.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  transform: scaleX(1);
+  border-right: solid 1px currentColor;
+}
+

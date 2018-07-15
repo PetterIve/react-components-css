@@ -4,6 +4,7 @@ const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
 const runSequence = require('run-sequence');
 const tslint = require('gulp-tslint');
+var del = require('del');
 
 const sassFilesPath = './src/**/*.scss';
 const buildPath = './lib';
@@ -41,4 +42,10 @@ gulp.task('sass-build', () => {
 
 gulp.task('mv-sass', () => {
     gulp.src('./src/*.scss').pipe(gulp.dest(buildPath));
+});
+
+gulp.task('clean', function () {
+    return del([
+        'lib/**/*',
+    ]);
 });

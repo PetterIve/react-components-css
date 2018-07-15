@@ -1,13 +1,25 @@
-.icon-container {
+.icons-page-container .icons-container {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
   text-align: center;
-  align-items: flex-start; }
-  .icon-container > :not(:first-child) {
-    margin-left: 15px; }
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 20px; }
+  .icons-page-container .icons-container + :not(:last-child) {
+    margin-right: 15px; }
+  .icons-page-container .icons-container .icon-wrapper {
+    width: 50px;
+    margin-bottom: 20px; }
 
-.search-input {
+.icons-page-container .search-input {
   margin-left: 20px; }
+
+.icons-page-container .no-results {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em; }

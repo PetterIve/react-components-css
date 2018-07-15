@@ -1,0 +1,17 @@
+@import 'src/variables.scss';
+
+.minus.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 15px;
+  border-bottom: 1px solid currentColor;
+  transform: scaleX(1);
+}
+
+.minus.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  transform: scaleX(0);
+}

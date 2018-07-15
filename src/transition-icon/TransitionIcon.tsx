@@ -6,6 +6,7 @@ import { Icon } from '../icon/Icon';
 export interface TransitionIconProps {
   iconNames: IconName[];
   interval?: number;
+  transition?: boolean;
 }
 
 export interface TransitionIconState {
@@ -26,7 +27,7 @@ export class TransitionIcon extends React.Component<TransitionIconProps, Transit
 
   render() {
     return (
-      <Icon iconName={this.state.iconName} />
+      <Icon iconName={this.state.iconName} transition={this.props.transition}/>
     )
   }
 

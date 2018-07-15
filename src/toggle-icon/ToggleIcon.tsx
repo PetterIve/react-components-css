@@ -5,6 +5,7 @@ import { Icon } from '../icon/Icon';
 export interface ToggleIconProps {
   normalIconName: IconName;
   toggledIconName: IconName;
+  transition?: boolean;
 
   isToggled?: boolean;
   onToggled?: () => void;
@@ -27,7 +28,7 @@ export class ToggleIcon extends React.Component<ToggleIconProps, ToggleIconState
       <Icon
         iconName={this.state.toggled ? this.props.toggledIconName : this.props.normalIconName}
         onClick={this.toggle}
-        transition={true}
+        transition={this.props.transition}
       />
     );
   }
