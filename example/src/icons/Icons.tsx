@@ -25,16 +25,14 @@ export class Icons extends React.Component<Props, State> {
   public render () {
     return (
       <Col>
-        <Row>
-          <h1>Icons</h1>
-          <Input
-            className="search-input"
-            iconName={IconName.SEARCH}
-            label="Search"
-            value={this.state.search}
-            onChange={this.onSearchChanged}
-          />
-        </Row>
+        <h1>Icons</h1>
+        <Input
+          className="search-input"
+          iconName={IconName.SEARCH}
+          label="Search"
+          value={this.state.search}
+          onChange={this.onSearchChanged}
+        />
         <Row className="icon-container">
           {this.renderIcons()}
         </Row>

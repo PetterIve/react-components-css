@@ -1,0 +1,5 @@
+.sections-container {
+  &>:not(:first-child) {
+    margin-top: 50px;
+  }
+}
