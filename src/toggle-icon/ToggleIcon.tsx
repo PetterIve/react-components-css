@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconName } from '../icon/IconName';
 import { Icon } from '../icon/Icon';
 
-export interface Props {
+export interface ToggleIconProps {
   normalIconName: IconName;
   toggledIconName: IconName;
 
@@ -10,12 +10,12 @@ export interface Props {
   onToggled?: () => void;
 }
 
-export interface State {
+export interface ToggleIconState {
   toggled: boolean;
 }
 
-export class ToggleIcon extends React.Component<Props, State> {
-  constructor(props: Props) {
+export class ToggleIcon extends React.Component<ToggleIconProps, ToggleIconState> {
+  constructor(props: ToggleIconProps) {
     super(props);
     this.state = {
       toggled: false

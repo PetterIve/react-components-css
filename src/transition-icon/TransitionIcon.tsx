@@ -3,19 +3,19 @@ import * as React from 'react';
 import { IconName } from '../icon/IconName';
 import { Icon } from '../icon/Icon';
 
-export interface Props {
+export interface TransitionIconProps {
   iconNames: IconName[];
   interval?: number;
 }
 
-export interface State {
+export interface TransitionIconState {
   iconName: IconName;
   currentIconNameIndex: number;
 }
 
-export class TransitionIcon extends React.Component<Props, State> {
+export class TransitionIcon extends React.Component<TransitionIconProps, TransitionIconState> {
 
-  constructor(props: Props) {
+  constructor(props: TransitionIconProps) {
     super(props);
     this.state = {
       iconName: props.iconNames[0],
