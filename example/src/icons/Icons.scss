@@ -12,12 +12,13 @@
     margin-bottom: 10px;
     padding-top: 20px;
 
-    &>:not(:last-child) {
+    &+:not(:last-child) {
       margin-right: 15px;
     }
 
     .icon-wrapper {
       width: 50px;
+      margin-bottom: 20px;
     }
   }
 

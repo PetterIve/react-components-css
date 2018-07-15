@@ -36,6 +36,7 @@ export class TransitionIcons extends React.Component {
         {this.renderTransition([IconName.TV, IconName.LAPTOP, IconName.TABLET, IconName.MOBILE], transition)}
         {this.renderTransition([IconName.ARROW_DOWN, IconName.ARROW_LEFT, IconName.ARROW_UP, IconName.ARROW_RIGHT], transition)}
         {this.renderTransition([IconName.MINUS, IconName.CHECK], transition)}
+        {this.renderTransition([IconName.PLUS, IconName.REMOVE], transition)}
         {this.renderTransition([IconName.LEFT_ALIGN, IconName.CENTER_ALIGN, IconName.RIGHT_ALIGN], transition)}
       </Row>
     )

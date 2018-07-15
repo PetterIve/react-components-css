@@ -45,7 +45,11 @@ export class Icons extends React.Component<Props, State> {
       .map(key => {
         return (
           <Col key={key} className="icon-wrapper">
-            <Icon iconName={IconName[key] as IconName} />
+            <Icon
+              hoverable={true}
+              iconName={IconName[key] as IconName}
+              transition={true}
+            />
             <div>{IconName[key].toLowerCase()}</div>
           </Col>
         )

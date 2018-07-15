@@ -9,10 +9,11 @@
   width: 100%;
   margin-bottom: 10px;
   padding-top: 20px; }
-  .icons-page-container .icons-container > :not(:last-child) {
+  .icons-page-container .icons-container + :not(:last-child) {
     margin-right: 15px; }
   .icons-page-container .icons-container .icon-wrapper {
-    width: 50px; }
+    width: 50px;
+    margin-bottom: 20px; }
 
 .icons-page-container .search-input {
   margin-left: 20px; }

@@ -4,14 +4,18 @@ import { IconName, ToggleIcon } from 'react-css-icons';
 import { Col } from '../lib/col/Col';
 import { Row } from '../lib/row/Row';
 
+const header = '<Toggle>';
+const transitionTrue = 'transition={true}'
+const transitionFalse = 'transition={false}'
+
 export class Toggles extends React.Component {
   public render() {
     return (
       <Col>
-        <h1>Toggle</h1>
-        <h2>Animated</h2>
+        <h1>{header}</h1>
+        <h2>{transitionTrue}</h2>
         {this.renderToggles(true)}
-        <h2>Static</h2>
+        <h2>{transitionFalse}</h2>
         {this.renderToggles(false)}
       </Col>
     )
@@ -30,7 +34,7 @@ export class Toggles extends React.Component {
         {this.renderToggle(IconName.ARROW_UP, IconName.ARROW_DOWN, transition)}
         {this.renderToggle(IconName.MINUS, IconName.ARROW_DOWN, transition)}
         {this.renderToggle(IconName.PLUS, IconName.MINUS, transition)}
-        {this.renderToggle(IconName.REMOVE, IconName.PLUS, transition)}
+        {this.renderToggle(IconName.CHECK, IconName.MINUS, transition)}
         {this.renderToggle(IconName.LEFT_ALIGN, IconName.RIGHT_ALIGN, transition)}
       </Row>
     )

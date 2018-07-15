@@ -26,4 +26,5 @@
     outline: none; }
   .input-wrapper .search-icon {
     position: absolute;
-    right: 0; }
+    right: 0;
+    bottom: 2px; }
