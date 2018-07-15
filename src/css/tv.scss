@@ -1,0 +1,32 @@
+@import 'src/variables.scss';
+
+.tv.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 3px;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.tv.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  bottom: -4px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.tv.#{$icon_class_name}:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: -4px;
+  width: 7px;
+  height: 1px;
+  background-color: currentColor;
+}
+

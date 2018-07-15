@@ -1,0 +1,25 @@
+@import 'src/variables.scss';
+
+.arrow-left.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 16px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.arrow-left.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

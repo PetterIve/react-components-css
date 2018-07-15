@@ -1,0 +1,23 @@
+@import 'src/variables.scss';
+
+.center-align.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 17px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+
+.center-align.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 11px;
+  height: 5px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+}
+

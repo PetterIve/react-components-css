@@ -1,0 +1,25 @@
+@import 'src/variables.scss';
+
+.plus.#{$icon_class_name}:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.plus.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.plus.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+}

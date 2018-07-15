@@ -1,0 +1,58 @@
+{
+  "name": "react-css-icons",
+  "version": "0.0.1",
+  "description": "Pure css icons as react components",
+  "main": "lib",
+  "types": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetterIve/react-components-css.git"
+  },
+  "keywords": [
+    "react",
+    "css"
+  ],
+  "author": "petterive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetterIve/react-components-css/issues"
+  },
+  "homepage": "https://github.com/PetterIve/react-components-css#readme",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "react": "16.4.1"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.2",
+    "@types/classnames": "2.2.3",
+    "@types/enzyme": "3.1.8",
+    "@types/jsdom": "11.0.4",
+    "@types/mocha": "2.2.48",
+    "@types/react": "16.0.35",
+    "@types/react-dom": "^16.0.6",
+    "@types/sinon": "4.1.3",
+    "chai": "4.1.2",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "gulp": "3.9.1",
+    "gulp-sass": "3.1.0",
+    "gulp-tslint": "^8.1.3",
+    "gulp-typescript": "3.2.4",
+    "ignore-styles": "5.0.1",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
+    "mocha": "5.0.0",
+    "mocha-css": "1.0.1",
+    "react-dom": "16.2.0",
+    "run-sequence": "2.2.1",
+    "sinon": "4.3.0",
+    "ts-node": "4.1.0",
+    "tslib": "1.9.0",
+    "tslint": "5.9.1",
+    "tslint-react": "^3.4.0",
+    "typescript": "^2.9.2"
+  }
+}

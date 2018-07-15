@@ -1,0 +1,23 @@
+@import 'src/variables.scss';
+
+.laptop.#{$icon_class_name} {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 12px;
+  height: 8px;
+  border-radius: 2px;
+  border: solid 1px currentColor;
+}
+
+.laptop.#{$icon_class_name}:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  bottom: -5px;
+  width: 18px;
+  height: 1px;
+  border-radius: 0 0 2px 2px;
+  border: solid 1px currentColor;
+}
+

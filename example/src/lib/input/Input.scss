@@ -1,0 +1,41 @@
+
+$font_size: 1.25em;
+
+.input-wrapper {
+  position: relative;
+  padding-top: $font_size;
+  display: flex;
+
+  .input-label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    pointer-events: none;
+    font-size: $font_size;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+    &.focused {
+      font-size: $font_size*3/4;
+      transform: translateY(- $font_size * (3/3));
+    }
+  }
+
+  .input {
+    display: flex;
+    font-size: $font_size;
+    line-height: 0;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 0;
+  }
+}
