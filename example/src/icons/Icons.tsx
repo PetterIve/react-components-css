@@ -24,7 +24,7 @@ export class Icons extends React.Component<Props, State> {
   }
   public render () {
     return (
-      <Col>
+      <Col className="icons-page-container">
         <h1>Icons</h1>
         <Input
           className="search-input"
@@ -33,22 +33,29 @@ export class Icons extends React.Component<Props, State> {
           value={this.state.search}
           onChange={this.onSearchChanged}
         />
-        <Row className="icon-container">
+        <Row className="icons-container">
           {this.renderIcons()}
         </Row>
       </Col>
     )
   }
-  private renderIcons = () => Object.keys(IconName)
-    .filter(this.filterSearch)
-    .map(key => {
-      return (
-        <Col key={key}>
-          <Icon iconName={IconName[key] as IconName} />
-          <div>{IconName[key].toLowerCase()}</div>
-        </Col>
-      )
-    });
+  private renderIcons = () => {
+    const icons = Object.keys(IconName)
+      .filter(this.filterSearch)
+      .map(key => {
+        return (
+          <Col key={key} className="icon-wrapper">
+            <Icon iconName={IconName[key] as IconName} />
+            <div>{IconName[key].toLowerCase()}</div>
+          </Col>
+        )
+      });
+    if (icons.length > 0) {
+      return icons;
+    } else {
+      return <div className="no-results">No results</div>
+    }
+  }
 
   private filterSearch = (key: string) => {
     if (this.state.search.length === 0) {
