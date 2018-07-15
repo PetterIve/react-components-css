@@ -5,7 +5,7 @@
   "main": "lib",
   "types": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gulp && mocha -r jsdom-global/register -r ignore-styles -r ./setupTests.js './lib/**/*.test.js'",
     "build": "gulp"
   },
   "repository": {
