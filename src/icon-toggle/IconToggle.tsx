@@ -27,7 +27,7 @@ export class IconToggle extends React.Component<ToggleProps, ToggleState> {
       <Icon
         iconName={this.state.toggled ? this.props.toggledIconName : this.props.normalIconName}
         onClick={this.toggle}
-        animated={true}
+        transition={true}
       />
     );
   }
