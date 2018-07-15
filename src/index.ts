@@ -1,6 +1,6 @@
 export * from './icon/Icon';
 export * from './icon/IconName';
-export * from './icon-toggle/IconToggle';
+export * from './toggle-icon/ToggleIcon';
 export * from './transition-icon/TransitionIcon';
 
 export const initCss = () => {

@@ -6,7 +6,6 @@ import { Icon } from '../icon/Icon';
 export interface Props {
   iconNames: IconName[];
   interval?: number;
-
 }
 
 export interface State {

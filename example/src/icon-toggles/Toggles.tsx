@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IconName, IconToggle } from 'react-css-icons';
+import { IconName, ToggleIcon } from 'react-css-icons';
 
 import { Col } from '../lib/col/Col';
 import { Row } from '../lib/row/Row';
@@ -9,10 +9,10 @@ export const Toggles = () => {
     <Col>
       <h1>Toggle</h1>
       <Row>
-        <IconToggle normalIconName={IconName.PIN} toggledIconName={IconName.CHAT}/>
-        <IconToggle normalIconName={IconName.PLUS} toggledIconName={IconName.REMOVE}/>
-        <IconToggle normalIconName={IconName.ARROW_RIGHT} toggledIconName={IconName.ARROW_LEFT}/>
-        <IconToggle normalIconName={IconName.ARROW_UP} toggledIconName={IconName.ARROW_DOWN}/>
+        <ToggleIcon normalIconName={IconName.PIN} toggledIconName={IconName.CHAT}/>
+        <ToggleIcon normalIconName={IconName.PLUS} toggledIconName={IconName.REMOVE}/>
+        <ToggleIcon normalIconName={IconName.ARROW_RIGHT} toggledIconName={IconName.ARROW_LEFT}/>
+        <ToggleIcon normalIconName={IconName.ARROW_UP} toggledIconName={IconName.ARROW_DOWN}/>
 
       </Row>
     </Col>
