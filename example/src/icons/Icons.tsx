@@ -27,6 +27,7 @@ export class Icons extends React.Component<Props, State> {
       <Col className="icons-page-container">
         <h1>Icons</h1>
         <Input
+          clearInput={this.clearInput}
           className="search-input"
           iconName={IconName.SEARCH}
           label="Search"
@@ -38,6 +39,9 @@ export class Icons extends React.Component<Props, State> {
         </Row>
       </Col>
     )
+  }
+  private clearInput = () => {
+    this.setState({search: ''});
   }
   private renderIcons = () => {
     const icons = Object.keys(IconName)

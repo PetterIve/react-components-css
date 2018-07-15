@@ -35,6 +35,7 @@ export class Toggles extends React.Component {
         {this.renderToggle(IconName.MINUS, IconName.ARROW_DOWN, transition)}
         {this.renderToggle(IconName.PLUS, IconName.MINUS, transition)}
         {this.renderToggle(IconName.CHECK, IconName.MINUS, transition)}
+        {this.renderToggle(IconName.SEARCH, IconName.REMOVE, transition)}
         {this.renderToggle(IconName.LEFT_ALIGN, IconName.RIGHT_ALIGN, transition)}
       </Row>
     )

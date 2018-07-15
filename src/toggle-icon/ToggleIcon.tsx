@@ -1,8 +1,10 @@
 import * as React from 'react';
+
 import { IconName } from '../icon/IconName';
 import { Icon } from '../icon/Icon';
 
 export interface ToggleIconProps {
+  className?: string;
   normalIconName: IconName;
   toggledIconName: IconName;
   transition?: boolean;
@@ -26,7 +28,8 @@ export class ToggleIcon extends React.Component<ToggleIconProps, ToggleIconState
   render() {
     return (
       <Icon
-        iconName={this.state.toggled ? this.props.toggledIconName : this.props.normalIconName}
+        className={this.props.className}
+        iconName={this.isToggled() ? this.props.toggledIconName : this.props.normalIconName}
         onClick={this.toggle}
         transition={this.props.transition}
       />

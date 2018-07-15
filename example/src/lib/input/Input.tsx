@@ -1,6 +1,6 @@
 import * as classnames from 'classnames';
 import * as React from 'react';
-import { Icon, IconName } from 'react-css-icons';
+import { IconName, ToggleIcon } from 'react-css-icons';
 
 import './Input.css';
 
@@ -8,8 +8,10 @@ export interface Props {
   className?: string;
   label: string;
   value: string;
-  onChange: (value: string) => void;
   iconName?: IconName;
+
+  clearInput: () => void;
+  onChange: (value: string) => void;
 }
 
 export interface State {
@@ -44,7 +46,14 @@ export class Input extends React.Component<Props, State> {
           onChange={this.parseValue}
         />
         <label className={labelClassName}>{this.props.label}</label>
-        {this.renderIcon()}
+        <ToggleIcon
+          className="search-icon"
+          normalIconName={IconName.SEARCH}
+          toggledIconName={IconName.REMOVE}
+          isToggled={this.props.value.length > 0}
+          onToggled={this.props.clearInput}
+          transition={false}
+        />
       </div>
     )
   }
@@ -61,9 +70,4 @@ export class Input extends React.Component<Props, State> {
     this.props.onChange(e.target.value);
   };
 
-  private renderIcon = () => {
-    return this.props.iconName
-      ? <Icon className="search-icon" iconName={this.props.iconName}/>
-      : null;
-  }
 }
