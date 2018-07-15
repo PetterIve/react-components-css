@@ -23,6 +23,7 @@
   "homepage": "https://github.com/PetterIve/react-components-css#readme",
   "dependencies": {
     "classnames": "2.2.5",
+    "node-sass": "^4.9.2",
     "react": "16.4.1"
   },
   "devDependencies": {

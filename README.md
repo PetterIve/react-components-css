@@ -1,4 +1,6 @@
  # React CSS icons
+ 
+ [Live demo/explorer](https://petterive.github.io/react-css-icons/)
 
 React CSS icons is inspired by Wenting Zhang's [CSS Icon](https://cssicon.space/#/) project, also found 
 on [GitHub](https://github.com/wentin/cssicon). 
@@ -33,7 +35,7 @@ Call this function to set up the provided css files, e.g. in your `<App>` compon
 once.
 
 ### `<Icon />`
-Name        | Type          | Description
+Name        | Type          | :Description
 ---         | ---           | ---
 className   | string?       | Will be added to the container div.
 hoverable   | boolean?      | Icon will scale up by 1.1 when hovered if set.
