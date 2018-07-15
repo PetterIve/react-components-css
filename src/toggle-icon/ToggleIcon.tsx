@@ -6,8 +6,8 @@ export interface Props {
   normalIconName: IconName;
   toggledIconName: IconName;
 
-  onToggled?: () => void;
   isToggled?: boolean;
+  onToggled?: () => void;
 }
 
 export interface State {
