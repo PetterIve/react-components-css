@@ -11,9 +11,10 @@ Some CSS is optimized for smoother transitions.
 
 ## Table of content
 1. [Usage](#Usage)
-1. [`initCss()`](#`initCss()`)
-1. [`<Icon />`](#`<Icon />`)
-1. [`<TransitionIcon />`](#`<TransitionIcon />`)
+1. [`initCss()`](#initcss)
+1. [`Icon`](#`icon-`)
+1. [`TransitionIcon`](#transitionicon-)
+1. [`ToggleIcon`](#toggleicon-)
 
 
 ## Usage
