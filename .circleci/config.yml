@@ -1,9 +1,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      ignore:
-        - gh-pages
     docker:
       - image: circleci/node:7.10
 
@@ -28,6 +25,9 @@ jobs:
       - run: npm run build
 
   deploy:
+    branches:
+      ignore:
+        - gh-pages
     docker:
           - image: circleci/node:7.10
 
