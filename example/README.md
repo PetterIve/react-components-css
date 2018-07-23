@@ -2,7 +2,7 @@
 
 `$ npm install`
 
-`$npm start`
+`$ npm start`
 
 ## Development
-`npm link react-css-icons`
+`$ npm link react-css-icons`
