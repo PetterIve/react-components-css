@@ -18,7 +18,7 @@ Some CSS is optimized for smoother transitions.
 
 
 ## Usage
-```
+```typescript
 import { Icon, IconName, initCss } from 'react-css-icons';
  
 initCss(); // Call this if you don't want to override with your own styles
